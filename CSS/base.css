@@ -1,60 +1,136 @@
-body{
-    background: #0b0c10;
-    color: #e8eaf0;
+:root {
+  background: #0b0c10;
+  color: #e8eaf0;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
 }
 
-nav{
-    background: rgba(11,12,16,0.92);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid #1e2230;
+body {
+  margin: 0;
 }
 
-.nav_boutton{
-    background: #00d4ff18;
-    color: #00d4ff;
-    border-bottom: 1px solid #00d4ff;
-    font-weight: 500;
+/* Navigation */
+nav {
+  min-height: 72px;
+  padding: 0 64px;
+
+  background: rgba(11, 12, 16, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #1e2230;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
 }
+
+.nav_boutton {
+  padding: 10px 16px;
+  background: #00d4ff18;
+  color: #00d4ff;
+  border: 0;
+  border-bottom: 1px solid #00d4ff;
+  font-size: 14px;
+  font-weight: 500;
+
+  display: flex;
+  gap: 15px;
+}
+
+/* Présentation */
+.presentation {
+  min-height: 869.40px;
+  padding: 80px 64px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  background-image:
+    linear-gradient(rgba(232, 234, 240, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(232, 234, 240, 0.04) 1px, transparent 1px);
+
+  background-size: 40px 40px;
+}
+
+.presentation h1 {
+  margin: 0 0 24px;
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(56px, 115.2px, 88px);
+  line-height: 1.05;
+  color: #e8eaf0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.presentation h1 span {
+  color: #00d4ff;
+}
+
+.presentation p {
+  max-width: 680px;
+  margin: 0 0 32px;
+  color: #6b7494;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+
+
+.tag {
+  padding: 6px 12px;
+  border: 1px solid #00d4ff30;
+  border-radius: 999px;
+  background: #00d4ff18;
+  color: #00d4ff;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+}
+
+/* Compétences */
 
 .competence {
-    padding: 64px 64px;
+  padding: 100px;
+  border-top: 1px solid #1e2230 
 }
 
 #Skill {
-    display: flex; 
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(120px, 1fr));
+  gap: 16px;
 }
 
 .SkillCard {
-    background-color: #12141A;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;    
-    text-align: center;
-    height: 130px;
-    width: 144px;
-    padding: 24px 24px;
-    
+  min-height: 120px;
+  padding: 16px;
+  border: 1px solid #1e2230;
+  border-radius: 12px;
+  background: #12141a;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
 }
 
-.SkillCard img{
-    height: 48px;
-    width: 48px;
-    
+.SkillCard img {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
 }
-
-
 
 #symfony {
-    filter: invert();
+    filter: invert(1)
 }
 
-.explorer_portfolio {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;  
+/* Projets réalisés */
+.ExplorerPortfolio {
+    background: #12141a;
+    border-top: 1px solid #1e2230
 }
-
-
-
