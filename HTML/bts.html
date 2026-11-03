@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Présentation du BTS SIO et des options SLAM et SISR." />
+        <title>Présentation du BTS SIO — Mathieu Chantemesse</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <nav class="navbar" aria-label="Navigation principale">
+            <a class="brand" href="./index.html">
+                <span class="brand-mark">M</span>
+                <span class="brand-name">Mathieu Chantemesse</span>
+            </a>
+            <input class="menu-check" type="checkbox" id="menu-check" aria-label="Ouvrir le menu" />
+            <label class="menu-toggle" for="menu-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-list">
+                <li><a class="nav-link" href="./index.html">Accueil</a></li>
+                <li><a class="nav-link active" href="./bts.html">Présentation BTS</a></li>
+                <li><a class="nav-link" href="./projets.html">Projets réalisés</a></li>
+                <li><a class="nav-link" href="./stages.html">Stages</a></li>
+                <li><a class="nav-link" href="./veille.html">Veille techno</a></li>
+            </ul>
+        </nav>
+
+        <main class="container">
+            <header class="page-header">
+                <span class="tag">Formation</span>
+                <h1>Présentation du BTS SIO</h1>
+                <p>
+                    Services Informatiques aux Organisations — un BTS tourné vers les métiers du
+                    numérique.
+                </p>
+            </header>
+
+            <section class="grid grid-2">
+                <div class="card info-card">
+                    <h3 class="cyan">C'est quoi le BTS SIO ?</h3>
+                    <p>
+                        Le BTS SIO (Services Informatiques aux Organisations) est un diplôme de
+                        niveau bac+2 qui forme des professionnels capables de répondre aux besoins
+                        informatiques des entreprises. La formation dure 2 ans et comprend des
+                        stages en entreprise.
+                    </p>
+                </div>
+                <div class="card info-card">
+                    <h3 class="purple">Deux options au choix</h3>
+                    <p>
+                        Le BTS SIO se divise en deux options :
+                        <strong>SLAM</strong>
+                        (Solutions Logicielles et Applications Métiers), axée sur le développement,
+                        et
+                        <strong>SISR</strong>
+                        (Solutions d'Infrastructure, Systèmes et Réseaux), axée sur les réseaux et
+                        systèmes.
+                    </p>
+                </div>
+            </section>
+
+            <section class="subsection option-switch">
+                <input class="sr-radio" type="radio" name="option" id="opt-slam" checked />
+                <input class="sr-radio" type="radio" name="option" id="opt-sisr" />
+                <div class="tabs">
+                    <label class="tab" for="opt-slam">Option SLAM</label>
+                    <label class="tab" for="opt-sisr">Option SISR</label>
+                </div>
+
+                <div class="tab-panel panel-slam grid grid-2">
+                    <div class="card option-block">
+                        <h3>SLAM — Mon option</h3>
+                        <p>
+                            L'option SLAM prépare au développement d'applications. On apprend à
+                            concevoir, coder, tester et déployer des logiciels ou des applications
+                            web.
+                        </p>
+                        <ul class="arrow-list">
+                            <li>Développement web (PHP, JavaScript)</li>
+                            <li>Applications mobiles</li>
+                            <li>Bases de données (SQL)</li>
+                            <li>Programmation objet (Java, Python)</li>
+                            <li>Tests et qualité logicielle</li>
+                        </ul>
+                    </div>
+                    <div class="card option-block">
+                        <h3>Débouchés SLAM</h3>
+                        <ul class="job-list">
+                            <li>
+                                <span>Développeur web / full-stack</span>
+                                <span class="pill pill-cyan">Junior</span>
+                            </li>
+                            <li>
+                                <span>Développeur d'applications</span>
+                                <span class="pill pill-cyan">Junior</span>
+                            </li>
+                            <li>
+                                <span>Intégrateur web</span>
+                                <span class="pill pill-cyan">Junior</span>
+                            </li>
+                            <li>
+                                <span>BUT Informatique (poursuite)</span>
+                                <span class="pill pill-cyan">Bac+3</span>
+                            </li>
+                            <li>
+                                <span>Licence Pro développement</span>
+                                <span class="pill pill-cyan">Bac+3</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tab-panel panel-sisr grid grid-2">
+                    <div class="card option-block purple-border">
+                        <h3>SISR — L'autre option</h3>
+                        <p>
+                            L'option SISR forme aux métiers de l'infrastructure informatique :
+                            réseaux, serveurs, sécurité et administration systèmes.
+                        </p>
+                        <ul class="arrow-list">
+                            <li>Administration des systèmes (Linux, Windows)</li>
+                            <li>Configuration réseau (Cisco)</li>
+                            <li>Cybersécurité</li>
+                            <li>Virtualisation (VMware, Hyper-V)</li>
+                            <li>Supervision et monitoring</li>
+                        </ul>
+                    </div>
+                    <div class="card option-block purple-border">
+                        <h3>Débouchés SISR</h3>
+                        <ul class="job-list">
+                            <li>
+                                <span>Technicien systèmes &amp; réseaux</span>
+                                <span class="pill pill-purple">Junior</span>
+                            </li>
+                            <li>
+                                <span>Administrateur réseau</span>
+                                <span class="pill pill-purple">Junior</span>
+                            </li>
+                            <li>
+                                <span>Technicien support</span>
+                                <span class="pill pill-purple">Junior</span>
+                            </li>
+                            <li>
+                                <span>BUT Réseaux &amp; Télécom</span>
+                                <span class="pill pill-purple">Bac+3</span>
+                            </li>
+                            <li>
+                                <span>Licence Pro ASUR</span>
+                                <span class="pill pill-purple">Bac+3</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="subsection">
+                <h2>Programme de formation</h2>
+                <div class="grid grid-3">
+                    <div class="card module-card">
+                        <span class="pill pill-cyan">B1</span>
+                        <h3>Support et mise à disposition</h3>
+                        <p>
+                            Gestion du patrimoine informatique, réponse aux incidents, mise à
+                            disposition des utilisateurs.
+                        </p>
+                    </div>
+                    <div class="card module-card">
+                        <span class="pill pill-cyan">B2</span>
+                        <h3>Cybersécurité des services</h3>
+                        <p>
+                            Protéger les données, sécuriser les équipements et sensibiliser les
+                            utilisateurs.
+                        </p>
+                    </div>
+                    <div class="card module-card">
+                        <span class="pill pill-cyan">B3</span>
+                        <h3>Conception et développement</h3>
+                        <p>
+                            Applications métier, base de données, tests et intégration — spécifique
+                            SLAM.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="subsection">
+                <h2>Compétences évaluées aux épreuves</h2>
+                <p class="subsection-intro">
+                    Lors des épreuves du BTS SIO, 6 compétences sont évaluées à travers les
+                    situations professionnelles significatives.
+                </p>
+                <div class="grid grid-2">
+                    <div class="card competency">
+                        <span class="number">1</span>
+                        <p>Gérer le patrimoine informatique</p>
+                    </div>
+                    <div class="card competency">
+                        <span class="number">2</span>
+                        <p>Répondre aux incidents et aux demandes d'assistance et d'évolution</p>
+                    </div>
+                    <div class="card competency">
+                        <span class="number">3</span>
+                        <p>Développer la présence en ligne de l'organisme</p>
+                    </div>
+                    <div class="card competency">
+                        <span class="number">4</span>
+                        <p>Travailler en mode projet</p>
+                    </div>
+                    <div class="card competency">
+                        <span class="number">5</span>
+                        <p>Mettre à disposition des utilisateurs un service informatique</p>
+                    </div>
+                    <div class="card competency">
+                        <span class="number">6</span>
+                        <p>Organiser son développement professionnel</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 Mathieu Chantemesse — BTS SIO SLAM</p>
+            <div class="footer-links">
+                <a href="#">LinkedIn</a>
+                <a href="mailto:mathieu@example.com">Email</a>
+            </div>
+        </footer>
+    </body>
+</html>

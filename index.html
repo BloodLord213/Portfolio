@@ -1,125 +1,139 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="CSS/base.css" rel="stylesheet">
-        <title>Accueil</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Portfolio de Mathieu Chantemesse, étudiant en BTS SIO option SLAM."
+        />
+        <title>Accueil — Mathieu Chantemesse</title>
+        <link rel="stylesheet" href="./styles.css" />
     </head>
-
     <body>
-
-        <header>
-
-            <span>M</span>
-            <span>Mathieu Chantemesse</span>
-
-            <nav>
-
-                <button class = "nav_boutton" href="index.html">Accueil</button>
-                <button class = "nav_boutton" href="HTML/Presentation_BTS.html">Présentation BTS</button>
-                <button class = "nav_boutton" href="HTML/Projets_realises.html">Projets realises</button>
-                <button class = "nav_boutton" href="HTML/Stages.html">Stages</button>
-                <button class = "nav_boutton" href="HTML/Veille_techno.html">Veille techno</button>
-
-            </nav>
-
-        </header>
+        <nav class="navbar" aria-label="Navigation principale">
+            <a class="brand" href="./index.html">
+                <span class="brand-mark">M</span>
+                <span class="brand-name">Mathieu Chantemesse</span>
+            </a>
+            <input class="menu-check" type="checkbox" id="menu-check" aria-label="Ouvrir le menu" />
+            <label class="menu-toggle" for="menu-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-list">
+                <li><a class="nav-link active" href="./index.html">Accueil</a></li>
+                <li><a class="nav-link" href="./bts.html">Présentation BTS</a></li>
+                <li><a class="nav-link" href="./projets.html">Projets réalisés</a></li>
+                <li><a class="nav-link" href="./stages.html">Stages</a></li>
+                <li><a class="nav-link" href="./veille.html">Veille techno</a></li>
+            </ul>
+        </nav>
 
         <main>
-            <section class="presentation">
-
-                <span class="tag">BTS SIO — SLAM · 2ème année</span>
-
-                <h1>Mathieu <span>Chantemesse</span></h1>
-
-                <p>Étudiant en BTS Services Informatiques aux Organisations — </p> 
-                <p>option SLAM. Passionné par le développement web, les </p> 
-                <p>bases de données et les nouvelles technologies.</p>
-                
-
-                <button href="HTML/Projets_realises.html">Voir mes Projets -> </button>
-                <button href="HTML/Stages.html">Mes stages -> </button>
-
+            <section class="hero">
+                <div class="hero-content">
+                    <span class="tag">BTS SIO — SLAM · 2ème année</span>
+                    <h1>
+                        Mathieu
+                        <br />
+                        <span>Chantemesse</span>
+                    </h1>
+                    <p class="hero-copy">
+                        Étudiant en BTS Services Informatiques aux Organisations — option SLAM.
+                        Passionné par le développement web, les bases de données et les nouvelles
+                        technologies.
+                    </p>
+                    <div class="button-row">
+                        <a class="button" href="./projets.html">Voir mes projets →</a>
+                        <a class="button" href="./stages.html">Mon stage →</a>
+                    </div>
+                </div>
             </section>
 
-            <section class="competence">
-                
-                <h3>Compétences techniques</h3>
-
-                <div id="Skill">
-                    <div class="SkillCard">
-                        <img src="img/html5.svg" alt="logo html5">
+            <section class="section">
+                <p class="eyebrow">Compétences techniques</p>
+                <div class="grid grid-6">
+                    <div class="card skill-card">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            alt="Logo HTML5"
+                        />
                         <p>HTML5</p>
                     </div>
-
-                    <div class="SkillCard">
-                        <img src="img/css3.svg" alt="logo CSS3">
+                    <div class="card skill-card">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                            alt="Logo CSS3"
+                        />
                         <p>CSS3</p>
                     </div>
-                    
-                    <div class="SkillCard">
-                        <img src="img/sql.svg" alt="logo SQL">
-                        <p>SQL</p>
-                    </div>
-
-                    <div class="SkillCard">
-                        <img src="img/csharp.svg" alt="logo c#">
-                        <p>C#</p>
-                    </div>
-
-                    <div class="SkillCard">
-                        <img src="img/php.svg" alt="logo PHP">
+                    <div class="card skill-card">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                            alt="Logo PHP"
+                        />
                         <p>PHP</p>
                     </div>
-
-                    <div class="SkillCard">
-                        <img src="img/symfony.svg" alt="logo Symfony"  id="symfony">
+                    <div class="card skill-card">
+                        <img
+                            class="invert"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg"
+                            alt="Logo Symfony"
+                        />
                         <p>Symfony</p>
                     </div>
+                    <div class="card skill-card">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuresqldatabase/azuresqldatabase-original.svg"
+                            alt="Logo SQL"
+                        />
+                        <p>SQL</p>
+                    </div>
+                    <div class="card skill-card">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                            alt="Logo C sharp"
+                        />
+                        <p>C#</p>
+                    </div>
                 </div>
-
             </section>
 
-            <section class="ExplorerPortfolio">
-
+            <section class="section section-alt">
                 <h2>Explorer le portfolio</h2>
-
-                <div id="conteneur_boutton">
-
-                    <button class="explorer_portfolio" href="HTML/Presentation_BTS.html">
-                        Le BTS SIO
+                <div class="grid grid-2">
+                    <a class="card link-card" href="./bts.html">
+                        <span class="card-index">01</span>
+                        <h3>Le BTS SIO</h3>
                         <p>Découvrez la formation, les options SLAM et SISR, et les débouchés.</p>
-                    </button>
-
-                    <button class="explorer_portfolio" href="HTML/Projets_realises.html">
-                        Projets réalisés
+                    </a>
+                    <a class="card link-card" href="./projets.html">
+                        <span class="card-index">02</span>
+                        <h3>Projets réalisés</h3>
                         <p>Applications web, bases de données et projets scolaires.</p>
-                    </button>
-
-                    <button class="explorer_portfolio" href="HTML/Stages.html">
-                        Stage en entreprise
-                        <p>Mes deux périodes de stage et les missions accomplies.</p>
-                    </button>
-
-                    <button class="explorer_portfolio" href="HTML/Veille_techno.html">
-                        Veille technologique
-                        <p>Ma veille sur : PHP</p>
-                    </button>
-
+                    </a>
+                    <a class="card link-card" href="./stages.html">
+                        <span class="card-index">03</span>
+                        <h3>Stage en entreprise</h3>
+                        <p>Ma période de stage et les missions accomplies.</p>
+                    </a>
+                    <a class="card link-card" href="./veille.html">
+                        <span class="card-index">04</span>
+                        <h3>Veille technologique</h3>
+                        <p>Ma veille sur les tendances : IA, cybersécurité et web.</p>
+                    </a>
                 </div>
-
             </section>
-
         </main>
 
-        <footer>
-            <p>© 2026 Mathieu Chantemesse  — BTS SIO SLAM</p>
-            <div>
-                <a href="">LinkedIn</a>
-                <a href="">Email</a>
+        <footer class="footer">
+            <p>© 2026 Mathieu Chantemesse — BTS SIO SLAM</p>
+            <div class="footer-links">
+                <a href="#">LinkedIn</a>
+                <a href="mailto:mathieu@example.com">Email</a>
             </div>
         </footer>
-        
     </body>
 </html>

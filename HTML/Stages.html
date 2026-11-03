@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Le stage en entreprise de Mathieu Chantemesse." />
+        <title>Stage — Mathieu Chantemesse</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <nav class="navbar" aria-label="Navigation principale">
+            <a class="brand" href="./index.html">
+                <span class="brand-mark">M</span>
+                <span class="brand-name">Mathieu Chantemesse</span>
+            </a>
+            <input class="menu-check" type="checkbox" id="menu-check" aria-label="Ouvrir le menu" />
+            <label class="menu-toggle" for="menu-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-list">
+                <li><a class="nav-link" href="./index.html">Accueil</a></li>
+                <li><a class="nav-link" href="./bts.html">Présentation BTS</a></li>
+                <li><a class="nav-link" href="./projets.html">Projets réalisés</a></li>
+                <li><a class="nav-link active" href="./stages.html">Stages</a></li>
+                <li><a class="nav-link" href="./veille.html">Veille techno</a></li>
+            </ul>
+        </nav>
+
+        <main class="container">
+            <header class="page-header">
+                <span class="tag">Expérience professionnelle</span>
+                <h1>Stage en entreprise</h1>
+                <p>
+                    Une période de stage pour mettre en pratique les compétences acquises en
+                    formation.
+                </p>
+            </header>
+
+            <section class="grid stage-layout">
+                <aside class="card">
+                    <p class="detail-title">Informations</p>
+                    <dl class="facts">
+                        <div class="fact">
+                            <dt>Entreprise</dt>
+                            <dd><strong>IVECO France — Usine d'Annonay</strong></dd>
+                        </div>
+                        <div class="fact">
+                            <dt>Période</dt>
+                            <dd>18 mai – 26 juin 2026 (6 semaines)</dd>
+                        </div>
+                        <div class="fact">
+                            <dt>Poste</dt>
+                            <dd>Développeur informatique — DSI / Pôle Développement</dd>
+                        </div>
+                        <div class="fact">
+                            <dt>Évaluation</dt>
+                            <dd><span class="pill pill-green">Objectifs atteints</span></dd>
+                        </div>
+                        <div class="fact">
+                            <dt>Technologies</dt>
+                            <dd class="tech-list">
+                                <span class="pill pill-dark">VB.NET</span>
+                                <span class="pill pill-dark">ASP.NET WebForms</span>
+                                <span class="pill pill-dark">SQL Server</span>
+                                <span class="pill pill-dark">SSMS</span>
+                                <span class="pill pill-dark">Visual Studio</span>
+                            </dd>
+                        </div>
+                    </dl>
+                </aside>
+                <div class="stage-main">
+                    <div class="detail-block">
+                        <p class="detail-title">Missions réalisées</p>
+                        <ol class="numbered-list">
+                            <li>
+                                Création d'une interface CRUD de gestion des utilisateurs avec
+                                requêtes SQL paramétrées
+                            </li>
+                            <li>
+                                Correction de la synchronisation des comptes entre IrisRef et
+                                WebDroit
+                            </li>
+                            <li>Automatisation de l'archivage des comptes devenus inactifs</li>
+                            <li>
+                                Consolidation et synchronisation des droits utilisateurs entre
+                                plusieurs bases
+                            </li>
+                            <li>Refactoring du module mensuel de rapport des anomalies</li>
+                        </ol>
+                    </div>
+                    <div class="detail-block purple-detail">
+                        <p class="detail-title">Bilan personnel</p>
+                        <p>
+                            Ce stage au sein de la DSI d'IVECO France m'a permis de développer et de
+                            maintenir des applications métiers dans un environnement industriel
+                            exigeant. J'ai renforcé mes compétences en VB.NET, ASP.NET WebForms et
+                            SQL Server, tout en apprenant à diagnostiquer du code existant et à
+                            respecter le cycle de déploiement DEV, CERTIF et PROD.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 Mathieu Chantemesse — BTS SIO SLAM</p>
+            <div class="footer-links">
+                <a href="#">LinkedIn</a>
+                <a href="mailto:mathieu@example.com">Email</a>
+            </div>
+        </footer>
+    </body>
+</html>

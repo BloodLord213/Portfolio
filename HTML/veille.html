@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Veille technologique de Mathieu Chantemesse." />
+        <title>Veille technologique — Mathieu Chantemesse</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <nav class="navbar" aria-label="Navigation principale">
+            <a class="brand" href="./index.html">
+                <span class="brand-mark">M</span>
+                <span class="brand-name">Mathieu Chantemesse</span>
+            </a>
+            <input class="menu-check" type="checkbox" id="menu-check" aria-label="Ouvrir le menu" />
+            <label class="menu-toggle" for="menu-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-list">
+                <li><a class="nav-link" href="./index.html">Accueil</a></li>
+                <li><a class="nav-link" href="./bts.html">Présentation BTS</a></li>
+                <li><a class="nav-link" href="./projets.html">Projets réalisés</a></li>
+                <li><a class="nav-link" href="./stages.html">Stages</a></li>
+                <li><a class="nav-link active" href="./veille.html">Veille techno</a></li>
+            </ul>
+        </nav>
+
+        <main class="container container-narrow">
+            <header class="page-header">
+                <span class="tag">Veille technologique</span>
+                <h1>Ma veille techno</h1>
+                <p>
+                    Exemples d'articles de veille présentés pour illustrer le suivi des évolutions
+                    du secteur informatique.
+                </p>
+            </header>
+
+            <div class="filterable">
+                <input class="sr-radio" type="radio" name="veille" id="v-all" checked />
+                <input class="sr-radio" type="radio" name="veille" id="v-ia" />
+                <input class="sr-radio" type="radio" name="veille" id="v-cyber" />
+                <input class="sr-radio" type="radio" name="veille" id="v-web" />
+                <input class="sr-radio" type="radio" name="veille" id="v-devops" />
+                <div class="filter-bar">
+                    <label class="tab" for="v-all">Toutes</label>
+                    <label class="tab" for="v-ia">Intelligence Artificielle</label>
+                    <label class="tab" for="v-cyber">Cybersécurité</label>
+                    <label class="tab" for="v-web">Développement web</label>
+                    <label class="tab" for="v-devops">DevOps</label>
+                </div>
+
+                <section class="articles">
+                    <article class="card article-card cat-ia">
+                        <div class="card-meta">
+                            <div>
+                                <span class="pill pill-cyan">Intelligence Artificielle</span>
+                                <span class="source">Le Monde Informatique</span>
+                            </div>
+                            <span class="date">Septembre 2025</span>
+                        </div>
+                        <h2>L'essor des modèles de langage (LLM) en entreprise</h2>
+                        <p>
+                            Les grandes entreprises adoptent massivement les LLM (GPT-4, Claude,
+                            Gemini) pour automatiser la rédaction, le support client et la
+                            génération de code.
+                        </p>
+                        <details class="article-details">
+                            <summary>Lire l'analyse →</summary>
+                            <div class="detail-block">
+                                <p class="detail-title">Résumé de l'article</p>
+                                <p>
+                                    Les modèles de langage de grande taille (LLM) comme GPT-4,
+                                    Claude ou Gemini transforment profondément le monde
+                                    professionnel. En 2025, de nombreuses entreprises les intègrent
+                                    dans leurs workflows pour automatiser des tâches répétitives :
+                                    rédaction de mails, résumés de réunions, génération de code,
+                                    support client de premier niveau.
+                                </p>
+                                <p>
+                                    Du côté des développeurs, des outils comme GitHub Copilot ou
+                                    Cursor permettent d'accélérer considérablement l'écriture de
+                                    code. Certaines entreprises rapportent des gains de productivité
+                                    de 30 à 40% sur des tâches de codage routinier.
+                                </p>
+                            </div>
+                            <div class="detail-block">
+                                <p class="detail-title">Points clés à retenir</p>
+                                <ul class="arrow-list">
+                                    <li>Adoption massive des LLM dans les entreprises du CAC40</li>
+                                    <li>Outils de code assisté par IA en forte croissance</li>
+                                    <li>
+                                        Questions éthiques sur la propriété intellectuelle et les
+                                        biais
+                                    </li>
+                                    <li>
+                                        Apparition de nouveaux métiers : prompt engineer, AI ops
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="detail-block">
+                                <p class="detail-title">Mon analyse personnelle</p>
+                                <p>
+                                    En tant que futur développeur, je trouve cette évolution à la
+                                    fois stimulante et interrogeante. L'IA ne remplace pas le
+                                    développeur, mais change profondément son rôle : on passe de
+                                    l'exécution à la supervision et à la validation. Il devient
+                                    crucial de comprendre comment fonctionnent ces modèles pour les
+                                    utiliser efficacement et de manière critique.
+                                </p>
+                            </div>
+                            <div class="detail-block">
+                                <p class="detail-title">Sources consultées</p>
+                                <ul class="sources">
+                                    <li>[1] Le Monde Informatique — septembre 2025</li>
+                                    <li>[2] GitHub Blog — Copilot statistics 2025</li>
+                                    <li>[3] McKinsey Digital — AI in the enterprise 2025</li>
+                                </ul>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card article-card cat-cyber">
+                        <div class="card-meta">
+                            <div>
+                                <span class="pill pill-purple">Cybersécurité</span>
+                                <span class="source">ANSSI / SecurityWeek</span>
+                            </div>
+                            <span class="date">Juillet 2025</span>
+                        </div>
+                        <h2>Cybersécurité : la montée des attaques par ransomware</h2>
+                        <p>
+                            Les rançongiciels ciblent de plus en plus les collectivités et les
+                            hôpitaux en France. L'ANSSI recommande la mise en place de sauvegardes
+                            hors-ligne.
+                        </p>
+                        <details class="article-details">
+                            <summary>Lire l'analyse →</summary>
+                            <div class="detail-block purple-detail">
+                                <p class="detail-title">Résumé de l'article</p>
+                                <p>
+                                    Les attaques par ransomware ont augmenté de 40% en France entre
+                                    2024 et 2025 selon l'ANSSI. Les hôpitaux, mairies et
+                                    établissements scolaires sont particulièrement ciblés car ils
+                                    ont souvent des systèmes informatiques vieillissants et peu
+                                    sécurisés.
+                                </p>
+                                <p>
+                                    Le principe est simple : un logiciel malveillant chiffre les
+                                    données de la victime, qui doit payer une rançon, souvent en
+                                    cryptomonnaie, pour récupérer l'accès.
+                                </p>
+                            </div>
+                            <div class="detail-block purple-detail">
+                                <p class="detail-title">Points clés à retenir</p>
+                                <ul class="arrow-list">
+                                    <li>
+                                        Augmentation de 40% des attaques ransomware en France en
+                                        2025
+                                    </li>
+                                    <li>Hôpitaux et collectivités en première ligne</li>
+                                    <li>
+                                        L'ANSSI recommande des sauvegardes offline et la
+                                        segmentation réseau
+                                    </li>
+                                    <li>
+                                        La sensibilisation des employés reste la première défense
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="detail-block">
+                                <p class="detail-title">Mon analyse personnelle</p>
+                                <p>
+                                    Ce sujet me touche directement car la cybersécurité est un enjeu
+                                    que tout technicien informatique doit maîtriser, quelle que soit
+                                    sa spécialité. Les mesures de base comme le MFA, les mises à
+                                    jour et les sauvegardes doivent devenir systématiques.
+                                </p>
+                            </div>
+                            <div class="detail-block">
+                                <p class="detail-title">Sources consultées</p>
+                                <ul class="sources">
+                                    <li>[1] ANSSI — Panorama de la menace informatique 2025</li>
+                                    <li>[2] SecurityWeek — Ransomware trends July 2025</li>
+                                    <li>[3] Cybermalveillance.gouv.fr — Rapport annuel</li>
+                                </ul>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card article-card cat-web">
+                        <div class="card-meta">
+                            <div>
+                                <span class="pill pill-cyan">Développement web</span>
+                                <span class="source">MDN / InfoQ</span>
+                            </div>
+                            <span class="date">Juin 2025</span>
+                        </div>
+                        <h2>WebAssembly : vers une performance native dans le navigateur</h2>
+                        <p>
+                            WebAssembly (Wasm) permet d'exécuter du code C++, Rust ou Go directement
+                            dans le navigateur à des vitesses proches du natif.
+                        </p>
+                        <details class="article-details">
+                            <summary>Lire l'analyse →</summary>
+                            <div class="detail-block">
+                                <p class="detail-title">Résumé de l'article</p>
+                                <p>
+                                    WebAssembly est un format binaire permettant d'exécuter du code
+                                    écrit en C++, Rust, Go ou d'autres langages directement dans le
+                                    navigateur, avec des performances proches du natif. Initialement
+                                    pensé pour les jeux vidéo et les applications gourmandes en
+                                    ressources, Wasm trouve aujourd'hui des applications bien plus
+                                    larges.
+                                </p>
+                                <p>
+                                    En 2025, on voit émerger des éditeurs de code en ligne, des
+                                    outils de retouche photo, des moteurs de rendu 3D et même des
+                                    modèles d'IA qui tournent entièrement dans le navigateur grâce à
+                                    WebAssembly.
+                                </p>
+                            </div>
+                            <div class="detail-block">
+                                <p class="detail-title">Points clés à retenir</p>
+                                <ul class="arrow-list">
+                                    <li>Exécution de code natif dans le navigateur</li>
+                                    <li>
+                                        Performances 10 à 50x supérieures au JavaScript pour les
+                                        calculs lourds
+                                    </li>
+                                    <li>Usages : IA en ligne, éditeurs vidéo, jeux, CAO</li>
+                                    <li>
+                                        Support natif dans tous les navigateurs modernes depuis 2023
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="detail-block">
+                                <p class="detail-title">Mon analyse personnelle</p>
+                                <p>
+                                    Bien que je travaille principalement en PHP et JavaScript,
+                                    WebAssembly m'intéresse car il élargit considérablement ce qu'on
+                                    peut faire dans un navigateur. À terme, cela pourrait permettre
+                                    de déployer des applications très lourdes sans installation.
+                                </p>
+                            </div>
+                            <div class="detail-block">
+                                <p class="detail-title">Sources consultées</p>
+                                <ul class="sources">
+                                    <li>[1] MDN Web Docs — WebAssembly overview</li>
+                                    <li>[2] InfoQ — Wasm in production 2025</li>
+                                    <li>[3] Bytecode Alliance — Annual report</li>
+                                </ul>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card article-card cat-devops">
+                        <div class="card-meta">
+                            <div>
+                                <span class="pill pill-purple">DevOps</span>
+                                <span class="source">Docker Blog / CNCF</span>
+                            </div>
+                            <span class="date">Mai 2025</span>
+                        </div>
+                        <h2>Docker et Kubernetes : la conteneurisation en 2025</h2>
+                        <p>
+                            La conteneurisation est devenue incontournable pour le déploiement
+                            d'applications. Kubernetes simplifie l'orchestration à grande échelle.
+                        </p>
+                        <details class="article-details">
+                            <summary>Lire l'analyse →</summary>
+                            <div class="detail-block purple-detail">
+                                <p class="detail-title">Résumé de l'article</p>
+                                <p>
+                                    Docker et Kubernetes sont devenus des standards incontournables
+                                    dans le monde du développement professionnel. Docker permet
+                                    d'empaqueter une application et toutes ses dépendances dans un
+                                    conteneur portable, garantissant que l'application fonctionne de
+                                    la même façon partout.
+                                </p>
+                                <p>
+                                    Kubernetes va plus loin en orchestrant des dizaines ou centaines
+                                    de conteneurs : il gère le load balancing, la scalabilité
+                                    automatique, le déploiement sans interruption et la reprise sur
+                                    panne.
+                                </p>
+                            </div>
+                            <div class="detail-block purple-detail">
+                                <p class="detail-title">Points clés à retenir</p>
+                                <ul class="arrow-list">
+                                    <li>
+                                        Docker : 80% des entreprises tech l'utilisent en production
+                                        en 2025
+                                    </li>
+                                    <li>Kubernetes devient le standard d'orchestration cloud</li>
+                                    <li>Réduction des conflits « ça marche sur ma machine »</li>
+                                    <li>Intégration native avec les grands clouds</li>
+                                </ul>
+                            </div>
+                            <div class="detail-block">
+                                <p class="detail-title">Mon analyse personnelle</p>
+                                <p>
+                                    J'ai découvert Docker lors de mon second stage chez PixelCode,
+                                    où tous les environnements de développement étaient
+                                    conteneurisés. Cela m'a convaincu de l'intérêt de cette
+                                    technologie : moins de problèmes de configuration et des
+                                    déploiements reproductibles.
+                                </p>
+                            </div>
+                            <div class="detail-block">
+                                <p class="detail-title">Sources consultées</p>
+                                <ul class="sources">
+                                    <li>[1] Docker Blog — State of application development 2025</li>
+                                    <li>[2] CNCF Annual Survey 2025</li>
+                                    <li>[3] Kubernetes.io — Case studies</li>
+                                </ul>
+                            </div>
+                        </details>
+                    </article>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 Mathieu Chantemesse — BTS SIO SLAM</p>
+            <div class="footer-links">
+                <a href="#">LinkedIn</a>
+                <a href="mailto:mathieu@example.com">Email</a>
+            </div>
+        </footer>
+    </body>
+</html>
