@@ -124,6 +124,17 @@ img {
     background: #00d4ff18;
     color: var(--primary);
 }
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.navbar-logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
 
 /* Menu mobile : case à cocher cachée + label (aucun JavaScript) */
 .menu-check {
@@ -838,6 +849,14 @@ img {
     .footer {
         align-items: flex-start;
         flex-direction: column;
+    }
+    .navbar-logo {
+    margin-left: auto;
+    }
+
+    .navbar-logo img {
+        width: 45px;
+        height: 45px;
     }
 }
 @media (max-width: 520px) {
